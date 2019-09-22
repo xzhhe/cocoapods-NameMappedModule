@@ -74,6 +74,28 @@ pod 'lottie-ios' ==> Lottie.framework
 
 ### 这个插件作用, 建立这个映射关系, 写入本地文件中
 
+pod install
+
+```
+......................
+
+
+Integrating client project
+ ⚠️  podspec name <==> module name
+🚗 name_framework_mapping
+{"AFNetworking"=>"AFNetworking.framework",
+ "SDWebImage"=>"SDWebImage.framework",
+ "UIAlertView-Blocks"=>"UIAlertView_Blocks.framework",
+ "YYCache"=>"YYCache.framework",
+ "lottie-ios"=>"Lottie.framework"}
+ 🚙 write name_framework_mapping hash to /Users/xiongzenghui/Desktop/XZHApp/.name_framework_mapping.json
+Sending stats
+
+......................
+```
+
+写入的本地文件
+
 ```json
 {
   "AFNetworking": "AFNetworking.framework",
