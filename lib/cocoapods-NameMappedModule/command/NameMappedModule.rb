@@ -18,13 +18,15 @@ module Pod
     #       in the `plugins.json` file, once your plugin is released.
     #
     class Namemappedmodule < Command
-      self.summary = 'Short description of cocoapods-NameMappedModule.'
+      self.summary = 'create pod name mapping to framework.'
 
       self.description = <<-DESC
-        Longer description of cocoapods-NameMappedModule.
+        create pod name mapping to framework.
       DESC
 
-      self.arguments = 'NAME'
+      self.arguments = [
+        CLAide::Argument.new('OUTPUT', true)
+      ]
 
       def initialize(argv)
         @name = argv.shift_argument
@@ -37,7 +39,7 @@ module Pod
       end
 
       def run
-        UI.puts "Add your implementation for the cocoapods-NameMappedModule plugin in #{__FILE__}"
+        UI.puts " ❌  not support command tool"
       end
     end
   end

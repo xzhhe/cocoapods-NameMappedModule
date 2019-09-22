@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = CocoapodsNamemappedmodule::VERSION
   spec.authors       = ['xiongzenghui']
   spec.email         = ['zxcvb1234001@163.com']
-  spec.description   = %q{A short description of cocoapods-NameMappedModule.}
-  spec.summary       = %q{A longer description of cocoapods-NameMappedModule.}
-  spec.homepage      = 'https://github.com/EXAMPLE/cocoapods-NameMappedModule'
+  spec.description   = %q{create pod name mapping to framework.}
+  spec.summary       = %q{create pod name mapping to framework.}
+  spec.homepage      = 'https://github.com/xzhhe/cocoapods-name_mapped_module'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_development_dependency 'bundler', '~> 2.0.1'
   spec.add_development_dependency 'rake'
 end
